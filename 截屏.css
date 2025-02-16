@@ -1,0 +1,32 @@
+.src-preview{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height:100%;
+	width: 100%;
+	display: none;
+	background: rgba(0,0,0,0.65);
+	z-index: 1;
+}
+/* .src-preview.show{
+	display: block;
+} */
+.screenshot{
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 70%;
+	top: 50%;
+	aspect-ratio: 16/9;
+}
+.screenshot img{
+	width: 100%;
+}
+#screenshot_close_btn{
+	position: absolute;
+	height: 1px;
+	right: -30px;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 2.6rem;
+}

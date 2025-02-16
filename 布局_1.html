@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<link rel="stylesheet" href="布局_1.css">
+	<link rel="stylesheet" href="登录框.css">
+	<link rel="stylesheet" href="填入学生信息框.css">
+	<link rel="stylesheet" href="截屏.css">
+	<body>
+		
+		<div id="total-seat">
+			
+		</div>
+		
+<!-- -----------------------------------------------------------------------------------------------------------------------------------  登录框-->
+		<div id="login" class="login">
+			<div id="title" class="login-title">登录
+				<span><a id="closeBtn" href="javascript:void(0);" class="close-login">关闭</a></span>
+			</div>
+			<div class="login-input-content">
+				<div class="login-input">
+					<label>用户名：</label>
+					<input type="text" placeholder="请输入用户名" name="info[username]" id="username" class="list-input">
+				</div>
+				<div class="login-input">
+					<label>登录密码：</label>
+					<input type="password" placeholder="请输入登录密码" name="info[password]" id="password" class="list-input">
+				</div>
+			</div>
+			<div id="loginBtn" class="login-button"><a href="javascript:void(0);" id="login-button-submit">登录</a></div>
+		</div>
+		<div id="bg" class="login-bg"></div>   <!-- 遮盖层 -->
+		
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- 填入信息表-->
+		<div id="infill_student">
+			<div id="infill_seat">
+				<div id="infill_seat_title">
+					自编座位栏
+					<span><a href="javascript:void(0);" id="infill_student_close">关闭</a></span>
+				</div>
+				<div id="infill_seat_rules">
+					<label for="seat_rules">排布规则:</label>
+					<input type="text" placeholder="两人一桌 or 三人一桌 (只填数字)" name="seat_rules" id="seat_rules" >
+				</div>
+				<div id="infill_seat_zu">
+					<label for="seat_zu">班级组数:</label>
+					<input type="text" placeholder="填写班级一共有多少组 (填数字)" name="seat_zu" id="seat_zu" >
+				</div>
+				<div id="infill_seat_lines">
+					<label for="seat_lines">最大行数:</label>
+					<input type="text" placeholder="填写座位最多有多少排 (填数字)" name="seat_lines" id="seat_lines" >
+				</div>
+				<button id="infill_seat_confirm">确定</button>
+			</div>
+			
+<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+			<div id="infill_student_title" >填入学生信息</div>
+			<div id="infill_input">
+				<label for="student_num">学生人数：</label>
+				<input type="text" placeholder="请输入班级学生人数 (填数字)" name="student_num" id="student_num" >
+				<br><label for="girl_num">最后一位女生学号：</label>
+				<input type="text" placeholder="默认学号表里女生排在前面" name="girl_num" id="girl_num" >
+				<button id="infill_input_confirm">确定</button>
+			</div>
+			<table id="infill_table" >
+				<thead>
+					<tr> <th>学生学号</th> <th>学生姓名</th> </tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<button id="infill_input_save">保存</button>
+		</div>
+		
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- 导航栏-->
+		<input type="checkbox" id="cb">
+		<label for="cb"><img src="MoSheng.jpg" id="MoSheng" alt="用户头像"></label>
+			<div class="nav">
+					<li id="li-1">截图</li>
+					<li id="li-2">登录</li>
+					<li id="li-3">填入信息</li>
+					<li id="li-4">模式</li>
+			</div>
+			<div id="xiao_nav">
+				<li id="reverse">倒转</li>
+				<li id="bian_color">变颜色</li>
+				<li id="btn">BEGIN</li>
+				<li id="sex_fen">男女分坐</li>
+			</div>
+			<div class="src-preview">   <!-- 截屏内容 -->
+				<div class="screenshot">
+					<i id="screenshot_close_btn" class="fa-solid fa-xmark">×</i>
+					<img src="" alt="screenshot">
+				</div>
+			</div>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- 底框-->
+			
+			<div id="platform">讲台</div>
+			<div id="platform_seat_num">
+				<p id="true_seat">实有座位数:</p>
+				<p id="p_seat_num"> </p>
+			</div>
+			<script src="登录框.js" type="text/javascript" charset="utf-8"></script>
+			<script src="填入学生信息框.js" type="text/javascript" charset="utf-8"></script>
+			<script src="布局_1.js" type="text/javascript" charset="utf-8"></script>
+			<script src="截屏.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+	
+</html>

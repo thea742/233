@@ -1,0 +1,170 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	background-color: #fffae8;
+}
+
+#total-seat{
+	position: fixed;
+	width: 100%;
+	height: 87%;
+
+}
+#total-seat>div{
+	height: 9%;
+	width: 100%;
+	/* margin: 0 auto; */
+	margin-top: 0.5%;
+	/* margin-left: 2.4%; */
+}
+
+#total-seat>div>li{
+	float: left;
+	position: relative;
+	height: 100%;
+	width: 8.0%;  /* 8.7 */
+	line-height: 54px; /* 200 */
+	font-size: 2vw;
+	text-align: center;
+	margin-right: 0.3%;
+	border-radius: 3%;
+	background-color: #ffffff;
+	border: 0.13vw solid rgba(35, 201, 237, 1.0);/* 1.8px */
+	list-style: none;
+	visibility: visible;
+	cursor: pointer;
+	/* background-color: silver; */
+}
+
+#seat_li-10{
+	margin-right: 0;
+}
+
+/* ----------------------------------------------------- 弹出导航框*/
+.nav{
+width: 20%;
+height: 7%;
+background-color: Aquamarine;
+position: fixed;/* 绝对定位 */
+bottom: -100px; /* 定位后的位置 先把导航栏隐藏起来*/
+left: 6%;
+/* border-radius: 12px 0 0 12px ; */
+/* overflow: hidden; */
+transition: 0.5s; /* 让点击有个过渡 */
+display: inline-block;
+border-radius: 5%;
+}
+
+#cb:checked ~ .nav{
+bottom: 2%;
+}
+
+#cb{
+	display: none;
+}
+
+.nav>li{
+text-align: center;
+width: 20%;
+height: 100%;
+color: #000;
+font-size: 1.3vw;
+line-height: 55px;
+display: inline-block;
+float: left;
+list-style: none;
+cursor: pointer;
+}
+
+.nav li:hover{
+background: #fc0;
+color: #000;
+}
+
+#li-3{
+	width: 40%;
+}
+
+/* ------------------------------------------------------------ */
+
+#xiao_nav{
+	position: fixed;
+	display: none;
+	bottom: 9%;
+	left: 8%;
+	height: 5%;
+	width: 20%;
+	border-radius: 4%;
+	background-color:aqua;
+	translate: 10s;
+}
+
+#xiao_nav li{
+	font-size: 1.0vw;
+	text-align: center;
+	width: 25%;
+	height: 100%;
+	list-style: none;
+	float: left;
+	display: inline-block;
+	cursor: pointer;
+}
+#xiao_nav li:hover{
+background: #FECC5B;
+color: #000;
+}
+
+/* ------------------------------------------------------------ */
+
+#MoSheng {
+	position: fixed;
+	display: inline-block;
+	width: 5.5%;
+	height: 10%;
+	border-radius: 50%;
+	cursor:pointer;
+	left: 28.5%;
+	bottom: 0.55%;   /* 要变 */
+}
+
+#platform{
+	position: fixed;
+	width: 30%;
+	height: 8%;
+	left: 35%;
+	bottom: 0.55%;   /* 要变 */
+	padding-top: 1%;
+	font-size: 2.5vw;
+	text-align: center;
+	border: 1px solid rgba(35, 201, 237, 1.0);
+	background-color: #FFFAFA;
+}
+
+#platform_seat_num{
+	position: fixed;
+	right: 36%;
+	bottom: 2.4%;   /* 要变 */
+	padding-top: 1%;
+	font-size: 1.0vw;
+	text-align: center;
+	color: #63605f;
+	background-color: #FFFAFA;
+}
+
+#platform_seat_num p{
+	margin: 0;
+	padding: 0;
+}
+
+.click {
+		display: inline-block;
+		line-height: 280%;/* 200% */
+		font-size: 2vw;
+		text-align: center;
+		color: #000000;
+		/* background-color: #55ffff; */
+		border: 0.13vw solid rgba(35, 201, 237, 1.0);
+}
+		
